@@ -18,11 +18,16 @@ def over_25?(age)
   end
 end
 
-puts "What is your age?"
-user_age = gets.chomp.to_i
-
 def check_age(age)
   over_18?(age)
 end
 
-check_age(user_age)
+user_input = nil
+
+while user_input != 'quit'
+  puts "What is your age?"
+  user_input = gets.chomp
+  if user_input != "quit"
+    check_age(user_input.to_i)
+  end
+end
