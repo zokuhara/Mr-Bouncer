@@ -2,7 +2,7 @@ def over_18?(age)
   if age < 18
     puts "You cannot do anything fun"
   else
-    puts "Congratuations! You can drink and smoke!"
+    puts "Congratuations! You can vote and smoke!"
     over_21?(age)
   end
 end
